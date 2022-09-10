@@ -5,8 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/scroll-animation.css" />
   <title>Rohan Mourya</title>
+
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+    integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
@@ -16,18 +27,20 @@
 
   <nav class="flex">
 
-    <div id="logo">
+    <div class="logo">
       <img src="/resources/Logo.png" alt="Rohan Mourya">
     </div>
 
     <div>
-      <ul id="navbar" class="flex list_none">
-        <li class="nav_Item">Home</li>
-        <li class="nav_Item">About Me</li>
-        <li class="nav_Item">Skills</li>
-        <li class="nav_Item">Projects</li>
-        <li class="nav_Item">Contect Me</li>
+      <ul class="navbar flex list_none">
+        <li class="nav_Item"> <a href="#home">Home</a> </li>
+        <li class="nav_Item"> <a href="#about">About Me</a> </li>
+        <li class="nav_Item"> <a href="#skills">Skills</a> </li>
+        <li class="nav_Item"> <a href="#projects">Projects</a></li>
+        <li class="nav_Item"> <a href="#contect">Contect Me</a></li>
       </ul>
+
+      <span class="menu_open"><img src="https://img.icons8.com/sf-black/64/000000/menu.png" /></span>
     </div>
   </nav>
 
@@ -36,8 +49,141 @@
 
   <!-- Hero -->
 
+  <div id="home" class="d-grid jc-space_around ">
+
+    <div class="home-1" data-san="slideTop">
+      <div>
+        <div class="home-1-1">
+          <p>Hey! This is</p>
+        </div>
+        <div class="home-1-1">
+          <h1>Rohan Mourya</h1>
+        </div>
+        <div class="home-1-1">
+          <h2 class="typed-text-output d-inline"></h2>
+          <div class="typed-text d-none ml-10">Web Developer, Java Backend Developer, Front End Developer</div>
+        </div>
+        <div class="btn-resume home-1-1">
+          <a href="" download="">Resume</a>
+        </div>
+      </div>
+    </div>
+    <div class="" data-san="slideTop">
+      <img class="main_img" src="/resources/charlie-green-3JmfENcL24M-unsplash-removebg-preview.png" alt="img">
+    </div>
+  </div>
 
 
+
+  <!-- About -->
+
+  <div class="container_about" id="about">
+
+
+    <div class="con-1" data-san="slideTop">
+      <div class="heading">
+        <h2>ABOUT</h2>
+      </div>
+      <div class="about_content">
+        <p>A curious learner and creative team player, interested in the job role of Software Developer at an IT
+          company. where I can utilize my understanding of coding and software development to efficiently fulfill
+          the requirements of clients and customers. I have done a full-time( 9-9-6 ) 7 months,<b>Full Stack Web
+            Developer Program </b> and <b> 1200+ hours of coding</b> and <b> DSA along with soft skills</b> and this
+          going to help me
+          with my job role.</p>
+      </div>
+
+      <div class="btn-read-more">
+        <Button>Know More</Button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Skills -->
+
+  <div class="container_skills" data-san="slideTop">
+
+    <div class="heading">
+      <h2>SKILLS</h2>
+    </div>
+
+    <div class="inner">
+      <div class="images-wrapper">
+        <div class="d-inline skills_img_div">
+
+          <img class="skills-Img" id="img-child" src="/resources/java.png" alt="">
+        </div>
+        <div class="d-inline skills_img_div">
+
+          <img class="skills-Img" src="/resources/mysql-icon.png" alt="">
+        </div>
+        <div class="d-inline skills_img_div">
+
+          <img class="skills-Img" src="/resources/aws.png" alt="">
+        </div>
+        <div class="d-inline skills_img_div">
+
+          <img class="skills-Img" src="/resources/javascript.png" alt="">
+        </div>
+        <div class="d-inline skills_img_div">
+
+          <img class="skills-Img" src="/resources/git.png" alt="">
+        </div>
+      </div>
+
+      <div class="images-wrapper">
+        <div class="d-inline skills_img_div">
+
+          <img class="skills-Img" src="/resources/cmd.png" alt="">
+        </div>
+        <div class="d-inline skills_img_div">
+
+          <img class="skills-Img" src="/resources/html.png" alt="">
+        </div>
+        <div class="d-inline skills_img_div">
+
+          <img class="skills-Img" src="/resources/css.png" alt="">
+        </div>
+        <div class="d-inline skills_img_div">
+
+          <img class="skills-Img" src="/resources/tailwind.png" alt="">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/typed/typed.min.js"></script>
+  <script src="/js/index.js"></script>
+  <script src="/js/scroll-animation.js"></script>
 </body>
 
 </html>
+
+
+<script>
+
+  // Typed Initiate
+  if ($('.typed-text-output').length == 1) {
+    var typed_strings = $('.typed-text').text();
+    var typed = new Typed('.typed-text-output', {
+      strings: typed_strings.split(', '),
+      typeSpeed: 100,
+      backSpeed: 20,
+      smartBackspace: false,
+      loop: true
+    });
+  }
+</script>
