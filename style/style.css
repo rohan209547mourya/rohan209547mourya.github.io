@@ -118,7 +118,14 @@ nav {
 
     background-color: var(--primari);
     grid-template-columns: repeat(2, 1fr);
-    height: 90vh;
+    height: 85vh;
+}
+
+#project {
+    background-color: white;
+    text-align: left;
+    height: 100vh;
+
 }
 
 .menu_open {
@@ -173,8 +180,8 @@ nav {
     text-align: center;
     border-radius: 10px;
     font-weight: bold;
-    background: rgb(103, 94, 230);
-    background: linear-gradient(90deg, rgba(103, 94, 230, 1) 12%, rgba(81, 12, 156, 1) 51%, rgba(204, 38, 195, 1) 91%);
+    background: rgb(141, 0, 255);
+    background: linear-gradient(80deg, rgba(141, 0, 255, 1) 6%, rgba(172, 0, 255, 1) 51%, rgba(215, 0, 255, 1) 91%);
 }
 
 .main_img {
@@ -224,7 +231,7 @@ nav {
     padding: 20px;
 }
 
-.heading>h2 {
+.heading>h1 {
 
     padding: 10px;
     border-bottom: 2px solid blueviolet;
@@ -246,7 +253,8 @@ nav {
     border: none;
     margin-top: 10px;
     font-weight: bold;
-    background-color: #8d00ff;
+    background: rgb(141, 0, 255);
+    background: linear-gradient(80deg, rgba(141, 0, 255, 1) 6%, rgba(172, 0, 255, 1) 51%, rgba(215, 0, 255, 1) 91%);
     color: white;
 }
 
@@ -271,7 +279,78 @@ nav {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 5rem;
+
 }
+
+.projectContainer {
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.projectCards {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+    padding: 30px;
+}
+
+.projectImg {
+
+    width: 90%;
+}
+
+.projectImg>img {
+
+    width: 100%;
+}
+
+.projectContent {
+
+    padding: 40px;
+}
+
+.projectHeading {
+
+    padding-bottom: 20px;
+}
+
+.pro_point>li {
+
+    padding-top: 10px;
+}
+
+.techStack {
+
+    margin-left: 30px;
+    padding: 10px;
+}
+
+li {
+
+    line-height: 1.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* meidum screens */
 @media all and (min-width: 768px) and (max-width: 1024px) {
