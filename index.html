@@ -17,7 +17,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
     integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 
 </head>
@@ -161,26 +161,39 @@
   <!-- Projects -->
 
 
-  <form action="mail.php" method="post">
+  <form method="post" onsubmit="sendEmail(); reset(); return false;">
 
-    <input type="text" name="name">
-    <input type="email" name="email">
-    <textarea name="message" id="" cols="30" rows="10"></textarea>
-    <input type="submit">
+    <label for="name">Name: </label>
+    <input type="text" name="" id="name" placeholder="Enter Name" required><br>
+    <label for="email">Email:</label>
+    <input type="email" name="" id="email" placeholder="Enter Name" required><br>
+    <label for="message">Message:</label>
+    <textarea id="message" cols="30" rows="10" required></textarea>
+    <input type="submit" value="submit">
   </form>
+  <script>
+    function sendEmail() {
+      Email.send({
+        SecureToken: "2918fcc0-d7b8-4c61-8b9c-a15584eafcab",
+        To: 'rohanmourya671@gmail.com',
+        From: "rohanmourya671@gmail.com",
+        Subject: "Visitor On Portfolio",
+        Body: "Name: " + document.getElementById("name").value
+          + "<br> Email: " + document.getElementById("email").value
+          + "<br> Message: " + document.getElementById("message").value
 
+      }).then(
+        message => alert(message)
+      );
+    }
+  </script>
 
-
-
-
-
-  <script src="/typed/typed.min.js"></script>
-  <script src="/js/index.js"></script>
-  <script src="/js/scroll-animation.js"></script>
 </body>
 
 </html>
 
+<script src="/typed/typed.min.js"></script>
+<script src="/js/scroll-animation.js"></script>
 
 <script>
 
