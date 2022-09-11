@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style/style.css">
   <link rel="stylesheet" href="/style/scroll-animation.css" />
-  <title>Rohan Mourya</title>
+  <title>Rohan Mourya | Java Backend Developer</title>
 
   <!-- Font Family -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +17,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
     integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 
 </head>
 
@@ -37,7 +39,7 @@
         <li class="nav_Item"> <a href="#about">About Me</a> </li>
         <li class="nav_Item"> <a href="#skills">Skills</a> </li>
         <li class="nav_Item"> <a href="#projects">Projects</a></li>
-        <li class="nav_Item"> <a href="#contect">Contect Me</a></li>
+        <li class="nav_Item"> <a href="#contect">Contact Me</a></li>
       </ul>
 
       <span class="menu_open"><img src="https://img.icons8.com/sf-black/64/000000/menu.png" /></span>
@@ -64,7 +66,7 @@
           <div class="typed-text d-none ml-10">Web Developer, Java Backend Developer, Front End Developer</div>
         </div>
         <div class="btn-resume home-1-1">
-          <a href="" download="">Resume</a>
+          <a href="/resources/Rohan Mourya.pdf" download="Rohan_Mourya.pdf">Resume</a>
         </div>
       </div>
     </div>
@@ -103,7 +105,7 @@
 
   <!-- Skills -->
 
-  <div class="container_skills" data-san="slideTop">
+  <div class="container_skills" data-san="slideTop" id="skills">
 
     <div class="heading">
       <h2>SKILLS</h2>
@@ -156,9 +158,16 @@
   </div>
 
 
+  <!-- Projects -->
 
 
+  <form action="mail.php" method="post">
 
+    <input type="text" name="name">
+    <input type="email" name="email">
+    <textarea name="message" id="" cols="30" rows="10"></textarea>
+    <input type="submit">
+  </form>
 
 
 
