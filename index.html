@@ -38,10 +38,19 @@
         <li class="nav_Item"> <a href="#project">Projects</a></li>
         <li class="nav_Item"> <a href="#contact">Contact Me</a></li>
       </ul>
-
       <span class="menu_open"><img src="https://img.icons8.com/sf-black/64/000000/menu.png" /></span>
+
     </div>
   </nav>
+  <div class="media_Items" id="media">
+    <ul class="media_List">
+      <li class="nav_Item"> <a href="#home">Home</a> </li>
+      <li class="nav_Item"> <a href="#about">About Me</a> </li>
+      <li class="nav_Item"> <a href="#skills">Skills</a> </li>
+      <li class="nav_Item"> <a href="#project">Projects</a></li>
+      <li class="nav_Item"> <a href="#contact">Contact Me</a></li>
+    </ul>
+  </div>
 
 
 
@@ -458,4 +467,26 @@
   // trigger.addEventListener("click", toggleModal);
   closeButton.addEventListener("click", toggleModal);
   window.addEventListener("click", windowOnClick);
+
+
+  let flag = false;
+
+  let menuBtn = document.querySelector(".menu_open");
+  menuBtn.addEventListener("click", () => {
+
+    if (flag) {
+
+      let temp = document.getElementById("media");
+      console.log(temp);
+      temp.className = "media_Items";
+      flag = false;
+
+    } else {
+
+      let temp = document.getElementById("media");
+      temp.removeAttribute("class");
+      flag = true;
+    }
+  })
+
 </script>

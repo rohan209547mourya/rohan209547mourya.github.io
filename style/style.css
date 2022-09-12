@@ -498,9 +498,95 @@ input {
 
 
 
+
+
+
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu>li {
+    margin: 0 1rem;
+    overflow: hidden;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+
+.media_Items {
+
+    display: none;
+    transition: all .9s ease-in-out;
+    text-align: center;
+}
+
+
+
+
+
+
 /* meidum screens */
 @media all and (min-width: 768px) and (max-width: 1024px) {
 
+
+    body {
+
+        max-width: fit-content;
+        width: 100%;
+    }
 
     .menu_open {
 
@@ -510,6 +596,135 @@ input {
     .navbar {
 
         display: none;
+    }
+
+    .media_List {
+        text-align: center;
+        padding: 10px;
+        list-style: none;
+
+    }
+
+    .nav_Item {
+        padding: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    .nav_Item>a {
+
+        font-weight: 700;
+    }
+
+    #home {
+
+        margin-top: 30px;
+        padding: 40px;
+    }
+
+    .home-1 {
+
+        width: 100%;
+    }
+
+    .home-1-1>p {
+
+        font-size: 1.4rem;
+    }
+
+    .home-1-1>h1 {
+
+        font-size: 2rem;
+    }
+
+    .btn-resume {
+
+        width: 150px;
+    }
+
+    .home-1-1>a {
+
+
+        font-size: 1.4rem;
+    }
+
+    .container_about {
+
+        height: 60vh;
+    }
+
+    .con-1 {
+
+        width: 90%;
+    }
+
+    .container_skills {
+
+        height: fit-content;
+    }
+
+    .skills-Img {
+
+        width: 80px;
+    }
+
+    .projectCards {
+
+
+        display: block;
+    }
+
+    .form_sec-1 {
+
+        width: 90%;
+        display: block;
+    }
+
+    .form_sec-1-2 {
+
+        margin-top: 40px;
+    }
+
+    #contact {
+
+
+        height: fit-content;
+    }
+
+    input {
+
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+
+    label {
+
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+
+    .formheading {
+
+        width: 60%;
+        display: block;
+        margin: auto;
+        padding-bottom: 20px;
+
+    }
+
+    textarea {
+
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+
+    .main_img {
+
+        width: 80%;
+        margin: auto;
+        margin-left: 2rem;
     }
 
 }
@@ -525,4 +740,154 @@ input {
 
         display: none;
     }
+
+    body {
+
+        max-width: fit-content;
+        width: 100%;
+    }
+
+    .menu_open {
+
+        display: inline;
+    }
+
+    .navbar {
+
+        display: none;
+    }
+
+    .media_List {
+        text-align: center;
+        padding: 10px;
+        list-style: none;
+
+    }
+
+    .nav_Item {
+        padding: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    .nav_Item>a {
+
+        font-weight: 700;
+    }
+
+    #home {
+
+        display: block;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .home-1 {
+
+        width: 100%;
+    }
+
+    .home-1-1>p {
+
+        font-size: 1.4rem;
+    }
+
+    .home-1-1>h1 {
+
+        font-size: 2rem;
+    }
+
+    .btn-resume {
+
+        width: 150px;
+    }
+
+    .home-1-1>a {
+
+
+        font-size: 1.4rem;
+    }
+
+    .container_about {
+
+        height: fit-content;
+    }
+
+    .con-1 {
+
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .container_skills {
+
+        height: fit-content;
+    }
+
+    .skills-Img {
+
+        width: 80px;
+    }
+
+    .projectCards {
+
+
+        display: block;
+    }
+
+    .form_sec-1 {
+
+        width: 90%;
+        display: block;
+    }
+
+    .form_sec-1-2 {
+
+        margin-top: 40px;
+    }
+
+    #contact {
+
+
+        height: fit-content;
+    }
+
+    input {
+
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+
+    label {
+
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+
+    .formheading {
+
+        width: 60%;
+        display: block;
+        margin: auto;
+        padding-bottom: 20px;
+
+    }
+
+    textarea {
+
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+
+    .main_img {
+
+        width: 80%;
+        margin: auto;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+
 }
