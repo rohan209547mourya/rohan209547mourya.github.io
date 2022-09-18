@@ -178,6 +178,18 @@ textarea {
     color: rgb(73, 73, 73);
 }
 
+
+.github{
+
+    width: 90%;
+    margin: auto;
+}
+
+.github>img{
+
+    width: 100%;
+}
+
 .home-1-1>h1 {
 
     text-transform: uppercase;
@@ -187,6 +199,7 @@ textarea {
 .btn-resume {
     margin: 20px 0px 0px 60px;
     width: 200px;
+    /* height: 50px; */
     text-align: center;
     border-radius: 10px;
     font-weight: bold;
