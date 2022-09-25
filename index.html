@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style/style.css">
   <link rel="stylesheet" href="/style/scroll-animation.css" />
-  <title>Rohan Mourya | Java Backend Developer</title>
+  <title>Rohan Mourya | Software Developer</title>
 
   <!-- Font Family -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,9 @@
     integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 
 </head>
 
@@ -68,7 +71,8 @@
         </div>
         <div class="home-1-1">
           <h2 class="typed-text-output d-inline"></h2>
-          <div class="typed-text d-none ml-10">Web Developer, Java Backend Developer, Front End Developer</div>
+          <div class="typed-text d-none ml-10">Java Backend Developer , Web Developer, Software Developer , Front End
+            Developer</div>
         </div>
         <div class="btn-resume home-1-1">
           <a href="/resources/Rohan_Mourya_Resume.pdf" download="Rohan_Mourya_Resume.pdf">Resume</a>
@@ -168,14 +172,20 @@
       <h1>MORE</h1>
     </div>
 
-    
+
     <div class="github" data-san="slideTop">
-      <div class="softSkills">
-       
+      <!-- <img src="/resources/github.png" alt="github">
+      <p>Last up date 09/2022</p> -->
+      <div class="calendar">
+        <!-- Loading stuff -->
+
+
       </div>
-      <img src="/resources/github.png" alt="github">
-      <p>Last up date 09/2022</p>
+      <script>
+        GitHubCalendar(".calendar", "rohan209547mourya", { responsive: true });
+      </script>
     </div>
+  </div>
 
 
 
