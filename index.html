@@ -1,723 +1,935 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rohan Mourya | Java Backend Developer</title>
-
-  <link rel="shortcut icon" href="./assets/Rohanmourya.fafaa9b2.png" type="image/x-icon">
-  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="./assets/index.d4c30578.js"></script>
-  <link rel="stylesheet" href="./assets/index.b65f3160.css">
-</head>
-
-<body data-bs-spy="scroll" data-bs-target="#toggleMobileMenu" data-bs-offset="0" tabindex="0">
-  <!-- ==== Header ==== -->
-  <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-light" id="header">
-      <div class="container">
-        <a class="navbar-brand" href="">
-          <img src="./assets/logo.d9362d58.png" alt="" style="width: 70%;">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
-          aria-controls="toggleMobileMenu" aria-expanded="false" aria-table="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="toggleMobileMenu">
-          <ul class="navbar-nav ms-lg-auto">
-            <li class="nav-item">
-              <a href="#hero" aria-current="page" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">Skills</a>
-            </li>
-            <li class="nav-item">
-
-              <a href="#more" class="nav-link">More</a>
-            </li>
-            <li class="nav-item">
-              <a href="#portfolio" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item">
-              <div class="ml-7 text-left">
-                <a class="btn rounded-pill bg-accent text-white mx-auto"
-                  href="https://drive.google.com/uc?export=download&id=1Zl4Q5SxChMiaitrjh6XD2oyffGmcVZ9g"
-                  download="Rohan_Mourya_Resume.pdf">Resume</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- ==== End Header ==== -->
-
-  <!-- ==== Hero ==== -->
-  <div id="hero">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-6 mt-lg-0 d-grid align-content-center">
-          <section class="text-center text-lg-start" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1000">
-            <p>Hello! 👋 My name is</p>
-            <h1>Rohan Mourya</h1>
-            <p><span id="headline"></span></p>
-            <div class="social-links mx-auto mx-lg-0">
-              <div class="row">
-                <div class="col-3">
-                  <a href="mailto:rohanmourya671@gmail.com" target="_blank">
-                    <i class="bi bi-envelope-fill"></i>
-                  </a>
-                </div>
-                <div class="col-3">
-                  <a href="https://github.com/rohan209547mourya" target="_blank">
-                    <i class="bi bi-github"></i>
-                  </a>
-                </div>
-                <div class="col-3">
-                  <a href="https://www.linkedin.com/in/rohanmourya/" target="_blank">
-                    <i class="bi bi-linkedin"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="mt-3 text-left">
-              <button class="btn rounded-pill bg-accent text-white mx-auto"> <a
-                  class="btn rounded-pill bg-accent text-white mx-auto"
-                  href="https://drive.google.com/uc?export=download&id=1Zl4Q5SxChMiaitrjh6XD2oyffGmcVZ9g"
-                  download="Rohan_Mourya_Resume.pdf">Resume</a></button>
-            </div>
-          </section>
-        </div>
-        <div class="col-12 col-lg-6 d-grid align-content-center">
-          <div class="img-container" id="img-wrapper" data-aos="fade-left" data-aos-duration="1500"
-            data-aos-delay="2000">
-            <div id="canvas"></div>
-
-            <div class="curtain">
-              <img src="./assets/Rohanmourya.fafaa9b2.png" crossorigin="" data-sampler="simplePlaneTexture" width="400"
-                height="400" />
-            </div>
-          </div>
-        </div>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Rohan Mourya</title>
+    <link
+      rel="icon"
+      href="https://cdn.iconscout.com/icon/free/png-256/business-portfolio-1760227-1497578.png"
+    />
+  </head>
+  <body>
+    <div class="scrollToTop">
+      <i class="fas fa-angle-up"></i>
     </div>
-  </div>
-  <!-- ==== End Hero ==== -->
-
-  <main>
-    <!-- ==== About ==== -->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-6 d-grid align-content-center">
-            <section id="about_section" class="my-5 my-lg-0" data-aos="fade-right" data-aos-mirror="true"
-              data-aos-duration="1500">
-              <h1>ABOUT ME</h1>
-              <p>
-                Hey I’m Rohan Mourya - Java Developer, Who likes to
-                provide solutions for people's projects and businesses which
-                it is a challenge that I enjoy overcoming.
-              </p>
-              <p>
-                I am a passionate person who pursues his dreams, who works
-                hard and who is results oriented. As a matter of fact, I
-                constantly work on improving myself seeking to achieve the
-                best version of myself.
-              </p>
-              <p>
-                I have done 30 weeks 9 A.M. to 9 P.M. of Full Stack Web Development Program. Where I got knowledge of
-                programming. I have worked upon sevral projects there were some major, Collabrative and some where
-                small, Solo.
-              </p>
-            </section>
+    <div class="nav_center" id="nav_center">
+      <div class="nav_gapfill">
+        <nav class="navbar">
+          <div class="brand__container">
+            <div class="brand">
+              <h2>Software Developer</h2>
+            </div>
+            <div class="toggle">
+              <i class="fas fa-bars"></i>
+            </div>
           </div>
-          <div class="col-12 col-lg-6 d-grid align-content-center">
-            <section id="skills_section" class="mb-5 mb-lg-0" data-aos="fade-left" data-aos-duration="1000">
-              <h1>SKILLS</h1>
-              <div class="row">
-                <div class="col-6 col-md-4">
-                  <img src="./assets/java.a7fd0182.svg" alt="Java" />
-                  <span>JAVA</span>
-                </div>
-                <div class="col-6 col-md-4">
-                  <img src="./assets/spring.e05c67c5.svg" alt="html" />
-                  <span>Spring Boot</span>
-                </div>
-                <div class="col-6 col-md-4">
-                  <img src="./assets/mySql.abf11910.svg" alt="html" />
-                  <span>MySQL</span>
-                </div>
-                <div class="col-6 col-md-4">
-                  <img src="./assets/react.f053149c.png" alt="react" />
-                  <span>React Js</span>
-                </div>
-                <div class=" col-6 col-md-4">
-                  <img src="./assets/hibernate.6738e3fe.svg" alt="html" />
-                  <span>Hibernate</span>
-                </div>
-                <div class="col-6 col-md-4">
-                  <img src="./assets/html.831b0a8a.svg" alt="html" />
-                  <span>HTML</span>
-                </div>
-                <div class="col-6 col-md-4">
-                  <img src="./assets/css.9a2d55c8.svg" alt="css" />
-                  <span>CSS</span>
-                </div>
-                <div class="col-6 col-md-4">
-                  <img src="./assets/mongodb.64a21d47.svg" alt="react" />
-                  <span>MongoDB</span>
-                </div>
-                <div class="col-6 col-md-4">
-                  <img src="./assets/bootstrap.a071d875.svg" alt="bootstrap" />
-                  <span>Bootstrap</span>
-                </div>
-                <div class="col-6 col-md-4">
-                  <img src="./assets/tailwind.87eec164.svg" alt="tailwind css" />
-                  <span>Tailwind</span>
-                </div>
-                <div class="col-6 col-md-4">
-                  <img src="./assets/javascript.7ae6c4c0.svg" alt="javascript" />
-                  <span>JavaScript</span>
-                </div>
-                <div class="col-6 col-md-4">
-                  <img src="./assets/jQuery.e510e432.svg" alt="jquery" />
-                  <span>jQuery</span>
-                </div>
+          <div class="links">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about-sec">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#portfolio">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
 
-              </div>
-            </section>
+              <button>
+                <i class="fa-solid fa-file"></i>
+                <a
+                  href="https://drive.google.com/uc?export=download&id=11z1baWpt3AJ39hz4ANgd5TG7sP4MhmjL"
+                  onclick="window.open('https://drive.google.com/file/d/11z1baWpt3AJ39hz4ANgd5TG7sP4MhmjL/view?usp=share_link')"
+                  style="
+                    text-decoration: none;
+                    color: #838f8f;
+                    text-decoration-color: #838f8f;
+                    target: _blank;
+                  "
+                >
+                  <strong>Resume</strong>
+                </a>
+              </button>
+            </ul>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- ==== end About ==== -->
-
-    <section id="more">
-      <h1 class="mb-md-5">More Info</h1>
-      <div class="container">
-
-        <div id="statesMa">
-
-          <div class="col-6 col-md-4">
-
-            <img src="./assets/coding.aecf0d5f.png" alt="coding">
-            <span>1200+ Hours of Coding</span>
-          </div>
-
-
-          <div class="col-6 col-md-4">
-
-            <img src="./assets/algorithm.e58e19e2.png" alt="data structure and algorithms">
-            <span>300+ hours Data Structures and Algorithms</span>
-          </div>
-
-          <div class="col-6 col-md-4">
-
-            <img src="./assets/project.0c183685.png" alt="">
-            <span>20+ Projects</span>
-          </div>
-
-
-          <div class="col-6 col-md-4">
-
-            <img src="./assets/capable.c879b50b.png" alt="">
-            <span>300+ Hours of Soft Skills Training</span>
-          </div>
-
-          <div class="col-6 col-md-4">
-
-            <img src="./assets/collab.bcc77a52.png" alt="">
-            <span>Team Player</span>
-          </div>
-
-
-        </div>
-
-
-
-        <div class="githubStates">
-
-          <div class="calendar" style="margin-top: 5rem;">
-            <!-- Loading stuff -->
-
-          </div>
-
-        </div>
-
-
-        <script>
-          GitHubCalendar(".calendar", "rohan209547mourya", { responsive: true });
-        </script>
-
-      </div>
-
-
-
-    </section>
-
-    <div style="width:90%; margin:auto;">
-
-      <div style="width:80%; margin:auto;">
-        <img
-          src="https://github-readme-streak-stats.herokuapp.com/?user=rohan209547mourya&theme=vue-dark&hide_border=true"
-          alt="">
-
-        <img
-          src="https://github-readme-stats.vercel.app/api?username=rohan209547mourya&theme=vue-dark&show_icons=true&hide_border=true&count_private=true"
-          alt="">
-      </div>
-
-      <br>
-
-      <div style="width:40%; margin:auto;">
-        <img
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=rohan209547mourya&theme=vue-dark&show_icons=true&hide_border=true&layout=compact"
-          alt="">
+        </nav>
       </div>
     </div>
 
-
-
-    <!-- ==== Portfolio === -->
-    <section id=" project" class="">
-
-
-      <div class="container">
-        <h1 class="heading">Projects</h1>
-
-        <div class="projects">
-          <div class="project_img">
-            <img src="./assets/restapi.3591aaed.png" alt="">
-          </div>
-
-          <div class="details">
-            <h2 class="heading1">E-Commerce REST API</h2>
-            <ul>
-              <li>It's a simple E-commerce REST API from where you can buy Men, Women & Kids clothes and can also add
-                them to the Wishlist.</li>
-              <li>It was a collabrative project. All the task was achived by 5 developers in 5 days.We tried to
-                implements all
-                the feature that a E-commerce REST API should have.</li>
-              <li>My contribution in this was to implement user authentication, Security and other task related to
-                products.</li>
-              <li> Tech Stack :-
-                <ul>
-                  <li>Java</li>
-                  <li>Spring Boot</li>
-                  <li>Spring Security</li>
-                </ul>
-              </li>
-            </ul>
-            <div class="linkBtn">
-              <a class="github" href="https://github.com/Dev-Mriganka/REST-API-Ecommerce-Site">Code Link</a>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="projects">
-          <div class="project_img">
-            <img src="./assets/youtube.9e57be06.png" alt="">
-          </div>
-
-          <div class="details">
-            <h2 class="heading1">YouTube - Alternative </h2>
-            <ul>
-              <li>This Website is a alternative of YouTube that you can use to get rid of ads and data policy.</li>
-              <li>You can search for video or you can select category for the related videos and play them.</li>
-              <li>It was a solo project built within 3 days.</li>
-              <li> Tech Stack :-
-                <ul>
-                  <li>React Js</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>Material UI</li>
-                  <li>YouTube v3 API</li>
-                </ul>
-              </li>
-            </ul>
-            <div class="linkBtn">
-              <a class="github" href="https://github.com/rohan209547mourya/YouTube-Clone">Code Link</a>
-              <a class="Live" href="https://youtube-qcyt.onrender.com/">Live Link</a>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="projects">
-          <div class="project_img">
-            <img src="./assets/Animoto.c105c146.png" alt="">
-          </div>
-
-          <div class="details">
-            <h2 class="heading1">Animoto - Clone </h2>
-            <ul>
-              <li>Animoto is template editing web application which allows you to edit a template provided by them or
-                you can upload yours as well.</li>
-              <li>It was a collabrative project.All the task was achived by 5 developers in 5 days.We tried to copy all
-                the feature from this website.</li>
-              <li>My contribution in this was template tab and the main editing application.</li>
-              <li> Tech Stack :-
-                <ul>
-                  <li>HTML 5</li>
-                  <li>CSS 3</li>
-                  <li>JavaScript</li>
-                  <li>jQuery</li>
-                  <li>Fabric JS</li>
-                </ul>
-              </li>
-            </ul>
-            <div class="linkBtn">
-              <a class="github" href="https://github.com/rohan209547mourya/Animoto.com-Clone">Code Link</a>
-              <a class="Live" href="https://animoto-in.netlify.app/">Live Link</a>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="projects">
-
-          <div class="project_img">
-            <img src="./assets/BestBuy.d87acedb.png" alt="">
-          </div>
-
-          <div class="details">
-            <h2 class="heading1">Best Buy - Clone</h2>
-            <ul>
-              <li>This is a clone of best buy a e-commerce company which allow us to purchase products.</li>
-              <li>This was a collabrative project with a wonderful team of 6 members and have contributed equal.</li>
-              <li>In this project my main task was, to make user authentication system and user account settings.</li>
-              <li>Tech Stack :-
-                <ul>
-                  <li>HTML 5</li>
-                  <li>CSS 3</li>
-                  <li>JavaScript</li>
-                </ul>
-              </li>
-            </ul>
-            <div class="linkBtn">
-              <a class="github" href="https://github.com/mayurisamanta/Best-Buyers">Code Link</a>
-              <a class="Live" href="https://bestbuy-in.netlify.app/">Live Link</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="projects">
-          <div class="project_img">
-            <img src="./assets/disney_hotstar.7f292579.png" alt="">
-          </div>
-
-          <div class="details">
-            <h2 class="heading1">Movies Info Application</h2>
-            <ul>
-              <li>This website is informative website. it gives you information about web-serise, moives and Tv show. it
-                is inspierd by IDBM and Disney Hotstar.</li>
-              <li>I have completed all the task and page for this web application with 3 days. I worked on sevral
-                functions like searhing, sorting, fetching etc.</li>
-              <li>In this project my main task was, to implements end to end functionality of a movie application.</li>
-              <li>Tech Stack :-
-                <ul>
-                  <li>HTML 5</li>
-                  <li>CSS 3</li>
-                  <li>JavaScript</li>
-                  <li>IDBM Web Service</li>
-
-                </ul>
-              </li>
-            </ul>
-            <div class="linkBtn">
-              <a class="github" href="https://github.com/rohan209547mourya/Movie-Application">Code Link</a>
-              <a class="Live" href="https://moviesinfo-in.netlify.com/">Live Link</a>
-            </div>
-          </div>
-
-        </div>
-
-
+    <div class="responsive__navbar">
+      <div class="brand">
+        <h2>Software Developer</h2>
       </div>
+      <div class="links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-sec">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <button>
+            <i class="fa-solid fa-file"></i>
+            <a
+            href="https://drive.google.com/uc?export=download&id=11z1baWpt3AJ39hz4ANgd5TG7sP4MhmjL"
+            onclick="window.open('https://drive.google.com/file/d/11z1baWpt3AJ39hz4ANgd5TG7sP4MhmjL/view?usp=share_link')"
+            style="
+                text-decoration: none;
+                color: #838f8f;
+                text-decoration-color: #838f8f;
+                target: _blank;
+              "
+            >
+              <strong>Resume</strong>
+            </a>
+          </button>
+        </ul>
+      </div>
+    </div>
 
-      <!-- <script>
+    <div class="nav_home_gap--filler"></div>
 
-        const data = [{
-          "tital": "Animoto.com - Clone",
-          "points": [
-            "Animoto is template editing web application which allows you to edit a template provided by them or you can upload yours as well.",
-            "It was a collabrative project.All the task was achived by 5 developers in 5 days.We tried to copy all the feature from this website.",
-            "My contribution in this was template tab and the main editing application."],
-          "Tech": [
-            "HTML 5",
-            "CSS 3",
-            "JavaScript",
-            "Fabric JS"
-          ],
-
-          "github": "https://github.com/rohan209547mourya/deeply-tub-2367",
-          "netlify": "https://animoto-in.netlify.app/"
-        }, {
-
-          "tital": "BestBuy.com - Clone",
-          "points": [
-            "This is a clone of best buy a e-commerce company which allow us to purchase products.",
-            "This was a collabrative project with a wonderful team of 6 members and have contributed equal.",
-            "In this project my main task was, to make user authentication system and user account settings."],
-          "Tech": [
-            "HTML 5",
-            "CSS 3",
-            "JavaScript",
-            "jQuery"
-          ],
-
-          "github": "https://github.com/mayurisamanta/Best-Buyers",
-          "netlify": "https://bestbuy-in.netlify.app/"
-
-
-
-
-        }, {
-
-
-          "tital": "Movies Info Application",
-          "points": [
-            "This website is informative website. it gives you information about web-serise, moives and Tv show. it is inspierd by IDBM and Disney Hotstar.",
-            "I have completed all the task and page for this web application with 3 days. I worked on sevral functions like searhing, sorting, fetching etc.",
-            "In this project my main task was, to implements end to end functionality of a movie application."],
-          "Tech": [
-            "HTML 5",
-            "CSS 3",
-            "JavaScript",
-            "IDBM API"
-          ],
-
-          "github": "https://github.com/rohan209547mourya/Movie-Application",
-          "netlify": "https://moviesinfo-in.netlify.com/"
-
-
-
-
-        }];
-
-
-        let tital = document.getElementById("tital");
-        let aboutProject = document.getElementById("aboutProject");
-        let githubLink = document.getElementById("githubLink");
-        let netlink = document.getElementById("netlink");
-        let p1 = document.getElementById("p1");
-        let p2 = document.getElementById("p2");
-        let p3 = document.getElementById("p3");
-        let p4 = document.getElementById("p4");
-        let p5 = document.getElementById("p5");
-        let p6 = document.getElementById("p6");
-        let p7 = document.getElementById("p7");
-
-        function show1() {
-
-          let projectDetails = document.getElementById("projectDetails");
-
-          projectDetails.style.display = "block";
-
-          tital.innerText = data[0].tital;
-
-          p1.innerText = data[0].points[0];
-          p2.innerText = data[0].points[1];
-          p3.innerText = data[0].points[2];
-          p4.innerText = data[0].Tech[0];
-          p5.innerText = data[0].Tech[1];
-          p6.innerText = data[0].Tech[2];
-          p7.innerText = data[0].Tech[3];
-
-
-          githubLink.href = data[0].github;
-          netlink.href = data[0].netlify;
-
-        }
-
-
-        function show2() {
-
-          let projectDetails = document.getElementById("projectDetails");
-
-          projectDetails.style.display = "block";
-
-          tital.innerText = data[1].tital;
-
-          p1.innerText = data[1].points[0];
-          p2.innerText = data[1].points[1];
-          p3.innerText = data[1].points[2];
-          p4.innerText = data[1].Tech[0];
-          p5.innerText = data[1].Tech[1];
-          p6.innerText = data[1].Tech[2];
-          p7.innerText = data[1].Tech[3];
-          3
-          githubLink.href = data[1].github;
-          netlink.href = data[1].netlify;
-
-        }
-
-
-        function show3() {
-
-          let projectDetails = document.getElementById("projectDetails");
-
-          projectDetails.style.display = "block";
-
-          tital.innerText = data[2].tital;
-
-          p1.innerText = data[2].points[0];
-          p2.innerText = data[2].points[1];
-          p3.innerText = data[2].points[2];
-          p4.innerText = data[2].Tech[0];
-          p5.innerText = data[2].Tech[1];
-          p6.innerText = data[2].Tech[2];
-          p7.innerText = data[2].Tech[3];
-
-
-          githubLink.href = data[2].github;
-          netlink.href = data[2].netlify;
-
-        }
-
-
-        function hide1() {
-
-          let projectDetails = document.getElementById("projectDetails");
-          projectDetails.style.display = "none";
-        }
-
-      </script> -->
-
-    </section>
-    <!-- ==== End Portfolio === -->
-
-    <!-- === Contact ====  -->
-    <div id="contact">
-      <section>
-        <div class="container">
-          <h1>CONTACT ME</h1>
-          <div class="row">
-            <div class="hello mb-4 mb-lg-0 col-12 col-lg-4 d-grid align-content-center" data-aos="fade-right"
-              data-aos-duration="1000">
-              <span>Let's connect</span>
-              <p>
-                Do you want to hire me? want to build a project? you
-                have a question? don't hesitate to contact me.
-              </p>
-
-              <div class="mt-5 more_info">
-                <p>
-                  <i class="bi bi-geo-alt text-accent me-2 fs-5"></i>
-                  New Delhi, India
-                </p>
-
-                <p>
-                  <i class="bi bi-envelope-fill text-accent me-2 fs-5"></i>
-                  rohanmourya671@gmail.com
-                </p>
-
-                <p style="font-family: sans-serif">
-                  <i class="bi bi-telephone-fill text-accent me-2 fs-5"></i>
-                  +91 9310825076
-                </p>
-              </div>
-            </div>
-
-            <div class="contact_form col-12 col-lg-8 d-grid align-content-center">
-              <form action="" id="contact_form" name="portfolio_form" data-aos="fade-left" data-aos-duration="1000">
-                <div class="row">
-                  <div class="col-12 col-lg-6">
-                    <input type="text" name="name" id="name" placeholder="Your Name" class="form-control" required />
-                    <div class="invalid-feedback small_label">
-                      Please enter at least 2 character
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-6 mt-3 mt-lg-0">
-                    <input type="email" name="email" id="email" placeholder="Your Email" class="form-control"
-                      required />
-                    <div class="invalid-feedback small_label">
-                      Please enter a valid email
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-12 mt-3">
-                    <input type="text" name="subject" id="subject" placeholder="Subject" class="form-control"
-                      required />
-                    <div class="invalid-feedback small_label">
-                      Please enter a subject
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-12 mt-3">
-                    <textarea name="message" id="message" placeholder="Message" class="form-control" rows="5"
-                      maxlength="400" style="max-height: 300px" required></textarea>
-                    <div class="invalid-feedback small_label">
-                      Please enter more than 5 word
-                    </div>
-                    <div class="valid-feedback text-end" style="font-family: sans-serif"></div>
-                  </div>
-                  <!-- <div class="mt-3"></div> -->
-                  <div class="col-12 mt-3">
-                    <p class="thanks">Thank you. I will reply soon.</p>
-                  </div>
-                  <div class="mt-3 text-center text-lg-end">
-                    <button class="btn rounded-pill bg-accent text-white mx-auto" type="submit" id="send" disabled>
-                      Send Message
-                    </button>
-                  </div>
-                  <div class="spinner-border text-accent mx-auto" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                  </div>
-                </div>
-              </form>
-            </div>
+    <div class="home--center">
+      <section class="hero" id="home">
+        <div class="content">
+          <div class="title">
+            <h1>Hello World</h1>
+            <h1>I'm Rohan</h1>
           </div>
+          <button>
+            <i class="fa-solid fa-file"></i>
+            <a
+            href="https://drive.google.com/uc?export=download&id=11z1baWpt3AJ39hz4ANgd5TG7sP4MhmjL"
+            onclick="window.open('https://drive.google.com/file/d/11z1baWpt3AJ39hz4ANgd5TG7sP4MhmjL/view?usp=share_link')"
+            style="
+                text-decoration: none;
+                color: #838f8f;
+                text-decoration-color: #838f8f;
+                target: _blank;
+              "
+            >
+              <strong>Get Resume</strong>
+            </a>
+          </button>
+        </div>
+        <div class="image">
+          <img src="./assets/hero.png" alt="" />
         </div>
       </section>
     </div>
-    <!-- ==== End Contact ====  -->
-  </main>
 
-  <!-- ==== Start footer ====  -->
-  <footer id="footer">
-    <div class="container">
-      <div class="row row-cols-1 row-cols-lg-2">
-        <p>
-          Made with ❤️ by
-          <a href="https://www.linkedin.com/in/rohanmourya">Rohan Mourya</a>
+    <div class="spring right" id="spring1">
+      <div class="coil"></div>
+      <div class="bar gradient"></div>
+    </div>
+    <!--  -->
+    <div id="about"></div>
+    <section class="about" id="about-sec">
+      <div class="title__container">
+        <h2>About me</h2>
+        <p class="discription">
+          Results-driven software developer passionate about developing
+          userfriendly software applications. Excellent problem-solving skills
+          and ability to perform well in a team. Seeking to help Companies to
+          build their product as a software developer, as well as grow and
+          develop my own skills as a coder.
         </p>
+      </div>
+    </section>
 
-        <div class="text-center text-lg-end">
+    <div class="project--space about--space" id="about--space">
+      <div class="flex--project">
+        <section class="about_card defaultMargin">
+          <div class="about_container" id="about_container">
+            <div class="design">
+              <div class="background"></div>
+              <div class="card__container">
+                <h3>Masai</h3>
+                <a
+                  href="https://www.masaischool.com/"
+                  style="text-decoration: none"
+                  target="_blank"
+                >
+                  <div class="about_image">
+                    <div class="about--filler">
+                      <img src="assets/masailogo.jpg" alt="Masai Image" />
+                    </div>
+                  </div>
+                </a>
+                <div class="sub-logo-sec">
+                  <div class="name_course">
+                    <div style="color: white">Full Stack Web Development</div>
+                    <p>Full Time Course(2022)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          <a href="https://github.com/rohan209547mourya" target="_blank">
-            <i class="bi bi-github"></i>
-          </a>
-
-          <a href="https://linkedin.com/in/rohanmourya" target="_blank">
-            <i class="bi bi-linkedin"></i>
-          </a>
-        </div>
+            <div class="design right">
+              <div class="background"></div>
+              <div class="card__container">
+                <h3>Delhi University</h3>
+                <a
+                  href="https://www.du.ac.in/"
+                  style="text-decoration: none"
+                  target="_blank"
+                >
+                  <div class="about_image">
+                    <div class="about--filler">
+                      <img src="assets/dulogo.png" alt="NMIET logo" />
+                    </div>
+                  </div>
+                </a>
+                <div class="sub-logo-sec">
+                  <div class="name_course">
+                    <div style="color: white">
+                      Business and Accounting
+                    </div>
+                    <p>Bachelor of Commerce</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-  </footer>
-  <!-- ==== End footer ====  -->
 
-  <!-- ==== Dark/Light mode button === -->
-  <button id="theme">
-    <i class="bi bi-moon-fill"></i>
-    <i class="bi bi-brightness-high-fill"></i>
-  </button>
+    <!-- <section class="services defaultMargin" id="services">
+      <div class="title__container">
+        <h2>Satistics</h2>
+        <p>More about my learnings.</p>
+      </div>
+      <div class="container">
+        <div class="design">
+          <div class="background"></div>
+          <div class="service">
+            <div class="image">
+              <img src="assets/masailogo.jpg" alt="Masai Image">
+            </div>
+            <h3>1200+</h3>
+            <p>
+              Hours of Coding
+            </p>
+          </div>
+        </div>
+        <div class="design right">
+          <div class="background"></div>
+          <div class="service">
+            <div class="image">
+              <img src="assets/nmietlogo.png" alt="NMIET logo">
+            </div>
+            <h3>15+</h3>
+            <p>
+              Projects completed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
+    <!--  -->
+    <div class="spring" id="springL1">
+      <div class="coil"></div>
+      <div class="bar gradient"></div>
+    </div>
+    <section class="skills defaultMargin" id="skills">
+      <div class="title__container">
+        <h2>Main Skills</h2>
+        <p>
+          I see all types of projects as if they were mine. This brings me
+          closer to projects with much more confidence and commitment.
+        </p>
+      </div>
+      <div class="content">
+        <div class="skill">
+          <div class="container">
+            <div class="circular">
+              <div class="inner"></div>
+              <div class="number">78%</div>
+              <div class="circle">
+                <div class="bar left">
+                  <div class="progress"></div>
+                </div>
+                <div class="bar right">
+                  <div class="progress"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>Frontend Development</h3>
+        </div>
+        <div class="skill">
+          <div class="container two">
+            <div class="circular">
+              <div class="inner"></div>
+              <div class="number">80%</div>
+              <div class="circle">
+                <div class="bar left">
+                  <div class="progress"></div>
+                </div>
+                <div class="bar right">
+                  <div class="progress"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>Backend Development</h3>
+        </div>
+        <div class="skill">
+          <div class="container three">
+            <div class="circular">
+              <div class="inner"></div>
+              <div class="number">34%</div>
+              <div class="circle">
+                <div class="bar left">
+                  <div class="progress"></div>
+                </div>
+                <div class="bar right">
+                  <div class="progress"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>App Development</h3>
+        </div>
+        <div class="skill">
+          <div class="container four">
+            <div class="circular">
+              <div class="inner"></div>
+              <div class="number">70%</div>
+              <div class="circle">
+                <div class="bar left">
+                  <div class="progress"></div>
+                </div>
+                <div class="bar right">
+                  <div class="progress"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>Fullstack Development</h3>
+        </div>
+      </div>
+    </section>
+    <div class="spring right" id="spring2">
+      <div class="coil"></div>
+      <div class="bar gradient"></div>
+    </div>
 
-</body>
+    <!-- Project Section -->
+    <div class="project--space" id="project--space">
+      <div class="flex--project">
+        <section class="portfolio defaultMargin" id="portfolio">
+          <div class="title__container">
+            <h2>Projects</h2>
+            <p>
+              I have already built these amazing things with love and
+              dedication.
+            </p>
+          </div>
+          <div class="container">
+            <div class="design">
+              <div class="background"></div>
+              <div class="portfolio__container">
+                <h3>E-Commerce REST API</h3>
+                <p>
+                  An eCommerce REST API is a web service that allows developers to access eCommerce platform functionalities, such as inventory management, payment processing, and customer data retrieval, through a set of RESTful endpoints. 
+                </p>
+                <a href="https://github.com/Dev-Mriganka/REST-API-Ecommerce-Site" style="text-decoration: none" target="_blank">
+                  <div class="image">
+                    <img src="./assets/Swagger-UI.png" alt="" />
+                  </div>
+                </a>
 
+                <!-- Project section --- icons from fontawesome -->
+                <div class="stack--icons">
+                  <p>SpringBoot</p>
+                  <p>MySql</p>
+                  <p>Hibernate</p>
+                </div>
+
+                <div class="button">
+                  <!-- <button class="button_tag">
+                    <a
+                      class="link_button"
+                      href="http://sushankpay.me/swagger-ui/"
+                      target="_blank"
+                      >Visit</a
+                    >
+                  </button> -->
+                  <button class="button_tag">
+                    <a
+                      class="link_button"
+                      href="https://github.com/Dev-Mriganka/REST-API-Ecommerce-Site"
+                      target="_blank"
+                      >GitHub</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__container">
+              <h3>Animoto - Clone</h3>
+              <p>
+                
+                Animoto.com is a video creation platform that allows users to easily create and edit videos using pre-made templates and their own images, video clips, and music. It's primarily used for creating marketing and promotional content.
+              </p>
+
+              <a
+                href="https://animoto-in.netlify.app/"
+                style="text-decoration: none"
+                target="_blank"
+              >
+                <div class="image">
+                  <img src="./assets/animoto.png" alt="" />
+                </div>
+              </a>
+
+              <!-- Project section --- icons from fontawesome -->
+              <div class="stack--icons">
+                <p>JavaScript</p>
+                <p>HTML</p>
+                <p>CSS</p>
+              </div>
+
+              <div class="button">
+                <button class="button_tag">
+                  <a
+                    class="link_button"
+                    href="https://animoto-in.netlify.app/"
+                    target="_blank"
+                    >Visit</a
+                  >
+                </button>
+                <button class="button_tag">
+                  <a
+                    class="link_button"
+                    href="https://github.com/rohan209547mourya/Animoto.com-Clone"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="portfolio__container">
+              <h3>YouTube - Alternative</h3>
+              <p>
+                
+                This YouTube clone is a video-sharing platform that allows users to view, and share videos. It features a similar user interface and video playback capabilities as YouTube, including recommended videos, likes, and comments.
+              </p>
+
+              <a
+                href="https://youtube-qcyt.onrender.com/"
+                style="text-decoration: none"
+                target="_blank"
+              >
+                <div class="image">
+                  <img src="./assets/youtube.png" alt="" />
+                </div>
+              </a>
+
+              <!-- Project section --- icons from fontawesome -->
+              <div class="stack--icons">
+                <p>React JS</p>
+                <p>Matrial UI</p>
+                <p>YouTube v3 API</p>
+              </div>
+
+              <div class="button">
+                <button class="button_tag">
+                  <a
+                    class="link_button"
+                    href="https://youtube-qcyt.onrender.com/"
+                    target="_blank"
+                    >Visit</a
+                  >
+                </button>
+                <button class="button_tag">
+                  <a
+                    class="link_button"
+                    href="https://github.com/rohan209547mourya/YouTube-Clone"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="portfolio__container">
+              <h3>Social Hive</h3>
+              <p>
+                This blogging application provides users with a platform to create, share, and interact with blog posts. It offers features like user authentication with login, logout, and signup options, the ability to create posts, and the ability for users to like and dislike posts for engagement and feedback.
+              </p>
+
+              <a
+                href="https://socialhive.vercel.app/"
+                style="text-decoration: none"
+                target="_blank"
+              >
+                <div class="image">
+                  <img src="./assets/socialhive.png" alt="" />
+                </div>
+              </a>
+
+              <!-- Project section --- icons from fontawesome -->
+              <div class="stack--icons">
+                <p>React JS</p>
+                <p>Node JS</p>
+                <p>Mongo DB</p>
+              </div>
+
+              <div class="button">
+                <button class="button_tag">
+                  <a
+                    class="link_button"
+                    href="https://silver-sfogliatella-0c9664.netlify.app/"
+                    target="_blank"
+                    >Visit</a
+                  >
+                </button>
+                <button class="button_tag">
+                  <a
+                    class="link_button"
+                    href="https://github.com/iamsushank/mutual-cart-3380"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="portfolio__container">
+              <h3>Disney<sup>+</sup>Hotstar - Clone</h3>
+              <p>
+                
+                An online database of information related to movies, TV shows, and video games. It provides users with ratings, reviews, trailers, and showtimes, and is widely regarded as one of the most comprehensive sources of information for entertainment media.
+              </p>
+
+              <a
+                href="https://moviesinfo-in.netlify.app/"
+                style="text-decoration: none"
+                target="_blank"
+              >
+                <div class="image">
+                  <img src="./assets/hotstar.png" alt="" />
+                </div>
+              </a>
+
+              <!-- Project section --- icons from fontawesome -->
+              <div class="stack--icons">
+                <p>JavaScript</p>
+                <p>HTML</p>
+                <p>CSS</p>
+              </div>
+
+              <div class="button">
+                <button class="button_tag">
+                  <a
+                    class="link_button"
+                    href="https://moviesinfo-in.netlify.app/"
+                    target="_blank"
+                    >Visit</a
+                  >
+                </button>
+                <button class="button_tag">
+                  <a
+                    class="link_button"
+                    href="https://github.com/rohan209547mourya/Movie-Application"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="design right">
+              <div class="background"></div>
+              <div class="portfolio__container">
+                <h3>Best Buy - Clone</h3>
+                <p>
+                  Best Buy is a leading American retailer of consumer electronics and appliances, with stores in the United States. The company offers a wide range of products and services, including computers, home theater systems, and installation services.
+                </p>
+
+                <a
+                  href="http://bestbuy-in.netlify.com/"
+                  style="text-decoration: none"
+                  target="_blank"
+                >
+                  <div class="image">
+                    <img src="./assets/bestbuy.png" alt="" />
+                  </div>
+                </a>
+
+                <!-- Project section --- icons from fontawesome -->
+                <div class="stack--icons">
+                  <p>JavaScript</p>
+                  <p>HTML</p>
+                  <p>CSS</p>
+                </div>
+
+                <div class="button">
+                  <button class="button_tag">
+                    <a
+                      class="link_button"
+                      href="http://bestbuy-in.netlify.com/"
+                      target="_blank"
+                      >Visit</a
+                    >
+                  </button>
+                  <button class="button_tag">
+                    <a
+                      class="link_button"
+                      href="https://github.com/mayurisamanta/Best-Buyers"
+                      target="_blank"
+                      >GitHub</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section class="services defaultMargin" id="services"></section>
+
+    <div class="spring" id="springL2">
+      <div class="coil"></div>
+      <div class="bar gradient"></div>
+    </div>
+    <section class="services defaultMargin" id="services">
+      <div class="title__container">
+        <h2>Tools</h2>
+        <p>Tools and Technologies I'm efficient with</p>
+      </div>
+
+      <div class="container">
+        <div class="design">
+          <div class="background"></div>
+          <div class="service">
+            <i class="fa-solid fa-code"></i>
+            <h3>Spring Tool Suite</h3>
+          </div>
+        </div>
+        <div class="service">
+          <i class="fa-brands fa-github"></i>
+          <h3>GitHub</h3>
+        </div>
+        <div class="design right">
+          <div class="background"></div>
+          <div class="service">
+            <i class="fa-brands fa-docker"></i>
+            <h3>Docker</h3>
+          </div>
+        </div>
+        <div class="design">
+          <div class="background"></div>
+          <div class="design right">
+            <div class="background"></div>
+            <div class="service">
+              <i class="fa-brands fa-git-alt"></i>
+              <h3>Git</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="spring right" id="spring3">
+      <div class="coil"></div>
+      <div class="bar gradient"></div>
+    </div>
+
+    <section class="services defaultMargin" id="services">
+      <div class="title__container">
+        <h2>Tech Stack</h2>
+        <p>These are the art I posses.</p>
+      </div>
+      <div class="container">
+        <div class="design">
+          <div class="background"></div>
+          <div class="service">
+            <i class="fa-brands fa-java"></i>
+            <h3>Java</h3>
+            <p>
+              Skilled Java developer, Utilized IO package to develop duplicate
+              phone number detector and eliminator.
+            </p>
+          </div>
+        </div>
+        <div class="service">
+          <i class="fa-solid fa-leaf"></i>
+          <h3>Spring Framework</h3>
+          <p>
+            In depth knowledge of spring framework including Spring Core, Spring
+            Boot, Spring MVC, etc.
+          </p>
+        </div>
+        <div class="service">
+          <i class="fa-brands fa-react"></i>
+          <h3>React Framework</h3>
+          <p>
+            I have a comprehensive understanding of the React framework, including its key features such as React Routing, React DOM, and Redux.
+          </p>
+        </div>
+        <div class="service">
+          <i class="fa-brands fa-node"></i>
+          <h3>Node JS</h3>
+          <p>
+            I have an in-depth understanding of the Node.js framework, including its key features such as modules, NPM (Node Package Manager), and the Node.js runtime environment.
+          </p>
+        </div>
+        <div class="service">
+          <i class="fa-solid fa-database"></i>
+          <h3>DBMS</h3>
+          <p>
+            Solid knowledge of Relational Database Management System, proficient
+            in MySql.
+          </p>
+        </div>
+
+        <div class="service">
+          <i class="fa-brands fa-css3-alt"></i>
+          <h3>CSS</h3>
+          <p>
+            Ability to style attractive webpage using css, designed 15+ projects
+            user interface.
+          </p>
+        </div>
+
+        <div class="service">
+          <i class="fa-solid fa-code"></i>
+          <h3>HTML</h3>
+          <p>Build several projects using semantic tags and readable code.</p>
+        </div>
+
+        <div class="design right">
+          <div class="background"></div>
+          <div class="service">
+            <i class="fa-brands fa-square-js"></i>
+            <h3>JavaScript</h3>
+            <p>
+              Highly proficient in Js with more than ten projects, clear
+              understanding of Callback hell, Closures, this, Asynchronous Js,
+              etc.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="spring" id="springL2">
+      <div class="coil"></div>
+      <div class="bar gradient"></div>
+    </div>
+
+    <section class="git_cal defaultMargin">
+      <h2 class="git_head" id="git">Github Contribution</h2>
+
+      <div class="git--stats">
+        <div>
+          <img
+            alt="Rohan Mourya's GitHub States"
+            src="https://github-readme-stats.vercel.app/api?username=rohan209547mourya&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=181818"
+          />
+        </div>
+        <br />
+
+        <div>
+          <img
+            title="🔥 Get streak stats for your profile at git.io/streak-stats"
+            alt="Rohan Mourya's streak"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=rohan209547mourya&theme=black-ice&hide_border=true&stroke=0000&background=181818"
+          />
+        </div>
+      </div>
+
+      <br />
+
+      <div class="calendar">
+        <!-- Loading stuff -->
+        Loading the data just for you.
+      </div>
+    </section>
+
+    <div class="spring right" id="spring3">
+      <div class="coil"></div>
+      <div class="bar gradient"></div>
+    </div>
+
+    <section class="languages defaultMargin">
+      <div class="container">
+        <div class="language">
+          <img
+            src="assets/kisspng-java-runtime-environment-programming-language-prog-java-5b16ff20a1e683.5082141715282337606632.png"
+            alt=""
+          />
+        </div>
+        <div class="language">
+          <img src="assets/spring.png" alt="" />
+        </div>
+        <div class="language">
+          <img src="assets/sql.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <div class="spring" id="springL2">
+      <div class="coil"></div>
+      <div class="bar gradient"></div>
+    </div>
+
+    <section class="contact defaultMargin" id="contact">
+      <div class="left">
+        <div class="title">
+          <div class="bar"></div>
+          <h3>Let's Talk?</h3>
+          <p>
+            Don't wait until tommorow. Let's talk today and learn how to start
+            leveraging your business.
+          </p>
+        </div>
+        <form action="https://formbold.com/s/91wvr"
+              method="POST" class="form">
+          <input type="text" placeholder="Name" name="name" />
+          <input type="email" placeholder="Email" name="email"/>
+          <input type="tel" placeholder="Number" name="mobile"/>
+          <button type="submit">Contact</button>
+        </form>
+      </div>
+      <div class="right">
+        <img src="assets/cse.jpg" alt="" />
+      </div>
+    </section>
+    <footer class="footer" id="footer">
+      <div class="section">
+        <div class="brand">
+          <h2>Portfolio.</h2>
+        </div>
+        <p>
+          Personal portfolio, build with passion and dedication to achieve pixel
+          perfect perfection.
+        </p>
+        <ul class="social">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/rohanmourya/"
+              target="_blank"
+              style="
+                text-decoration: none;
+                color: #838f8f;
+                text-decoration-color: #838f8f;
+              "
+              ><i
+                style="
+                  text-decoration: none;
+                  color: #838f8f;
+                  text-decoration-color: #838f8f;
+                "
+                class="fa-brands fa-linkedin"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/rohan209547mourya"
+              target="_blank"
+              style="
+                text-decoration: none;
+                color: #838f8f;
+                text-decoration-color: #838f8f;
+              "
+              ><i
+                style="
+                  text-decoration: none;
+                  color: #838f8f;
+                  text-decoration-color: #838f8f;
+                "
+                class="fa-brands fa-github"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="mailto: rohanmourya671@gmail.com"
+              target="_blank"
+              style="
+                text-decoration: none;
+                color: #838f8f;
+                text-decoration-color: #838f8f;
+              "
+              ><i
+                style="
+                  text-decoration: none;
+                  color: #838f8f;
+                  text-decoration-color: #838f8f;
+                "
+                class="fa-solid fa-envelope"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="section">
+        <h3 class="title">Get in Touch</h3>
+        <ul>
+          <li><i class="fas fa-phone"></i><span>+91 9310825076</span></li>
+          <li>
+            <i class="far fa-envelope-open"></i><span>rohanmourya671gmail.com</span>
+          </li>
+          <li><i class="far fa-building"></i><span>New Delhi, Delhi, India</span></li>
+        </ul>
+        <button>Send a Message</button>
+      </div>
+      <div class="section">
+        <h3 class="title">Services</h3>
+        <ul>
+          <li>Website Development</li>
+          <li>Building Applications</li>
+          <li>Backend Development</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h3 class="title">Popular Tags</h3>
+        <ul class="tags">
+          <li>Development</li>
+          <li>Technology</li>
+          <li>App</li>
+          <li>Programming</li>
+        </ul>
+      </div>
+    </footer>
+    <div class="lower__footer">
+      <span>Don't try to copy, Tracking any intention of piracy.</span>
+      <span>&copy; 2023 all rights reserved.</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/10b417d43c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/animation.js"></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script>
+      GitHubCalendar(".calendar", "rohan209547mourya");
+
+      // or enable responsive functionality:
+      GitHubCalendar(".calendar", "rohan209547mourya", { responsive: true });
+
+      // Use a proxy
+      GitHubCalendar(".calendar", "rohan209547mourya", {
+        proxy(rohan209547mourya) {
+          return fetch(`https://your-proxy.com/github?user=${rohan209547mourya}`);
+        },
+      }).then((r) => r.text());
+    </script>
+    <script></script>
+  </body>
 </html>
